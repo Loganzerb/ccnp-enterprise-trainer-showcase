@@ -27,7 +27,7 @@ The CLI processes a bounded set of commands through deterministic simulation rul
 
 ## Screenshot gallery
 
-These screenshots follow a learner from study selection through configuration, modeled verification, and troubleshooting. The OSPF captures show work in progress; their step and assessment counters do not indicate a completed assignment. Use the full-size links to view each gallery image at its full available resolution.
+These screenshots illustrate study selection, configuration feedback, modeled verification, and troubleshooting. The OSPF correction capture shows work in progress. The verification capture shows a guided modeled OSPF exercise completed during the screenshot review, reporting “Correct” and `14/14 Met`; guided completion does not establish independent learner mastery. Use the full-size links to view each image at its available resolution.
 
 ### Study Today
 
@@ -49,9 +49,9 @@ The modeled Cisco-style CLI rejects an unsupported OSPF command and accepts the 
 
 ### OSPF operational verification
 
-![Modeled show ip ospf neighbor output lists Router ID 2.2.2.2, state FULL/-, address 10.0.12.2, and interface GigabitEthernet1](assets/screenshots/ospf-verification.png)
+![Guided OSPF exercise completed during screenshot review shows a modeled route to 10.2.0.0/24, Correct with 14/14 Met, and an explicit statement that guided practice is not independent mastery](assets/screenshots/ospf-verification.jpg)
 
-The trainer generates deterministic OSPF operational evidence, allowing learners to inspect neighbor information and verify the expected simulated adjacency state, shown here as `FULL/-`. This output is modeled rather than produced through live OSPF packet exchanges. [View full-size modeled verification](assets/screenshots/ospf-verification.png).
+A guided modeled OSPF exercise completed during the screenshot review shows `show ip route ospf`, the route to `10.2.0.0/24` through `10.0.12.2`, and a Check Configuration result of “Correct” with `14/14 Met`. Guided completion does not establish independent learner mastery. The output is deterministic trainer behavior; this screenshot does not establish live Cisco device verification or CML execution. [View full-size modeled verification](assets/screenshots/ospf-verification.jpg).
 
 ### MST troubleshooting
 
@@ -108,7 +108,7 @@ The learner corrects the command to:
 ip ospf 10 area 0
 ```
 
-This example connects requirements to configuration modes, process and interface settings, syntax feedback, and corrective action. The omitted process identifier matters in this supported interface command. Verification is a separate learning step: the gallery shows simulated neighbor output, while the exercise remains in progress. Neither the excerpts nor the screenshot establish a live OSPF adjacency or completed assignment.
+This example connects requirements to configuration modes, process and interface settings, syntax feedback, and corrective action. The omitted process identifier matters in this supported interface command. The correction screenshot remains partial work. Verification is a separate learning step: a guided exercise completed during the screenshot review shows a modeled installed route and a checked “Correct” / `14/14 Met` result. The correction capture and the review walkthrough are separate sessions. Neither the excerpts nor the screenshots establish a live OSPF adjacency or independent learner mastery.
 
 ## Troubleshooting through evidence
 

@@ -82,7 +82,9 @@ ip ospf network point-to-point
 ip ospf cost 10
 ```
 
-The verification screenshot shows `show ip ospf neighbor` with neighbor Router ID `2.2.2.2`, state `FULL/-`, address `10.0.12.2`, and interface `GigabitEthernet1`. This is modeled neighbor evidence; the assignment's wording about an "actual neighbor relationship" refers to that bounded model. The view also shows `10/14 Met` and "Changes applied · check again," so it does not establish final assignment completion. No live OSPF packet exchange or live adjacency is claimed.
+The verification screenshot shows `show ip route ospf` with the modeled route `10.2.0.0/24 [110/15] via 10.0.12.2, GigabitEthernet1`. This guided modeled OSPF exercise was completed during the screenshot review. Check Configuration reports “Correct” with `14/14 Met`, and the walkthrough explicitly states: “Guided practice retained. This is not independent mastery.”
+
+The separate syntax-correction image remains an in-progress example. The assignment's wording about an “actual neighbor relationship” refers to the bounded model. The partially clipped LSDB line is not used as supporting evidence. This review walkthrough establishes completion of that guided modeled assignment; it does not establish independent learner mastery, live Cisco device verification, live OSPF packet exchange, or CML execution.
 
 ## 5. Troubleshooting exercise design
 
@@ -134,5 +136,5 @@ The trainer complements that work with repeatable, deterministic practice. I do 
 - Supported commands and modeled evidence are bounded by the individual exercise; the application does not implement a complete Cisco operating system or packet-level network simulation.
 - The full application source remains private. This showcase provides documentation and application screenshots.
 - The listed builders are examples of supported practice, not a complete inventory of the private application's development or release history.
-- The gallery shows visible workflows, including OSPF syntax correction, modeled neighbor evidence, and an MST mismatch exercise. Screenshots do not establish fresh runtime, automated-test, or CML validation.
+- The gallery shows visible workflows, including partial OSPF syntax correction, modeled route verification with a checked guided result, and an unanswered MST mismatch exercise. These images do not establish independent learner mastery, automated-test results, or live Cisco/CML validation.
 - The project is independently developed; no Cisco sponsorship, certification, endorsement, or official affiliation is implied.
